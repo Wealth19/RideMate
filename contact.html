@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideMate| Contact & Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">Ride<span>Mate</span></div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About/Services</a></li>
+          <li><a href="contact.html">Contact/Book Ride</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BOOKING FORM -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Book a Ride</h2>
+
+      <form onsubmit="bookRide(event)">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickup" placeholder="Enter pickup point" required>
+
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Enter destination" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" required>
+
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+          <option value="">-- Select Payment Method --</option>
+          <option value="card">Card</option>
+          <option value="transfer">Bank Transfer</option>
+          <option value="cash">Cash</option>
+        </select>
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" placeholder="Optional message..."></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT DETAILS -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+
+      <div class="about-text">
+        <p><b>Email:</b> support@ridemate.com</p>
+        <p><b>Phone:</b> +234 810 000 0000</p>
+        <p><b>Office Address:</b> Student ICT Center, University Campus</p>
+        <p>
+          You can contact Ridemate for complaints, partnership offers, or driver registration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 RideMate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
